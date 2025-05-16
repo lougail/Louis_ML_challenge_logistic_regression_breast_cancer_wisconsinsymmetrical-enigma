@@ -1,0 +1,48 @@
+```markdown
+## 📝 Plan de résolution de l'exercice
+
+### 1. **Exploration des données (EDA)**
+- Chargement des données
+- Présenter le jeu de données (`df.head()`, `df.info()`, `df.describe()`)
+- Analyser la variable cible `diagnosis` (répartition, déséquilibre éventuel)
+- Distinguer variables qualitatives et quantitatives
+- Visualiser la distribution des principales variables (histogrammes, boxplots)
+- Étudier les corrélations entre variables (matrice de corrélation, heatmap)
+
+---
+
+### 2. **Préparation des données**
+- Vérifier et traiter les valeurs manquantes (`missing_values`)
+- Encoder la variable catégorielle `diagnosis` (ex : M=1, B=0)
+- Supprimer la colonne `id` (non informative)
+- Gérer la multicolinéarité : identifier et retirer les variables très corrélées (>0.9)
+- (Bonus) Créer de nouvelles features ou appliquer une réduction de dimension (PCA)
+- Standardiser les variables quantitatives
+- Séparer les données en ensembles d'entraînement et de test
+
+---
+
+### 3. **Modélisation**
+- Entraîner un modèle de régression logistique sur les données d'entraînement
+- Afficher les coefficients du modèle et leur interprétation
+
+---
+
+### 4. **Évaluation du modèle**
+- Prédire sur l'ensemble de test
+- Calculer les métriques : accuracy, precision, recall, f1-score
+- Afficher la matrice de confusion
+- (Bonus) Tracer la courbe ROC et calculer l'AUC
+
+---
+
+### 5. **Intégration et utilisation du modèle**
+- Créer un script interactif permettant de saisir de nouvelles données et d'obtenir une prédiction
+- Expliquer brièvement comment utiliser ce script
+
+---
+
+### 6. **Conclusion**
+- Synthétiser les résultats obtenus
+- Proposer des pistes d'amélioration ou d'intégration clinique
+```
